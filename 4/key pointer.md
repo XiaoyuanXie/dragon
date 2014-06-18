@@ -33,53 +33,53 @@
 4.	! S -> S + S | S S | (S) | S * | a 和串 (a+a)*a
 5.	! S -> (L) | a 以及 L -> L, S | S 和串 ((a,a),a,(a))
 6.	!! S -> a S b S | b S a S | ε 和串 aabbab
-7.	下面的布尔表达式对应的文法：
-	bexpr -> bexpr or bterm | bterm
-	bterm -> bterm and bfactor | bfactor
-	bfactor -> not bfactor | (bexpr) | true | false
+7.	下面的布尔表达式对应的文法：<br />
+	bexpr -> bexpr or bterm | bterm<br />
+	bterm -> bterm and bfactor | bfactor<br />
+	bfactor -> not bfactor | (bexpr) | true | false<br />
 
 回答：	
-1.<br />	
-	S =lm=> 0S1 => 00S11 => 000111
-	S =rm=> 0S1 => 00S11 => 000111
-	略
-	非二义
-	前导n个连续0，后跟n个连续1的串
+1.
+	S =lm=> 0S1 => 00S11 => 000111<br />
+	S =rm=> 0S1 => 00S11 => 000111<br />
+	略<br />
+	非二义<br />
+	前导n个连续0，后跟n个连续1的串<br />
 	
-2.	
+2.
 	S =lm=> +SS => +*SSS => +*aSS => +*aaS => +*aaa
 	S =rm=> +SS => +Sa => +*SSa => +*Saa => +*aaa
 	略
 	非二义
 	加法、乘法的前缀表达式
 	
-3.	
+3.
 	S =lm=> S(S)S => (S)S => (S(S)S)S => ((S)S)S => (()S)S => (()S(S)S)S => (()(S)S)S => (()()S)S => (()())S => (()())
 	S =rm=> S(S)S => S(S) => S(S(S)S) => S(S(S)) => S(S()) => S(S(S)S()) => S(S(S)()) => S(S()()) => S(()()) => (()())
 	略
 	二义
 	所有对称的括号串
 	
-4.	
+4.
 	S =lm=> SS => S*S => (S)*S => (S+S)*S => (a+S)*S => (a+a)*S => (a+a)*a
 	S =rm=> SS => Sa => S*a => (S)*a => (S+S)*a => (S+a)*a => (a+a)*a
 	略
 	二义
 	由加号、乘号和字符a和对称的括号组成的串，且加号不在开头和结尾位置，乘号不在开头位置
 	
-5.	
+5.
 	S =lm=> (L) => (L, S) => (L, S, S) => ((S), S, S) => ((L), S, S) => ((L, S), S, S) => ((S, S), S, S) => ((a, S), S, S) => ((a, a), S, S) => ((a, a), a, S) => ((a, a), a, (L)) => ((a, a), a, (S)) => ((a, a), a, (a))
 	S =rm=> (L) => (L, S) => (L, (L)) => (L, (a)) => (L, S, (a)) => (L, a, (a)) => (S, a, (a)) => ((L), a, (a)) => ((L, S), a, (a)) => ((S, S), a, (a)) => ((S, a), a, (a)) => ((a, a), a, (a))
 	略
 	非二义
 	类似于python中的元组
 		
-6.		
+6.
 	S =lm=> aSbS => aaSbSbS => aabSbS => aabbS => aabbaSbS => aabbabS => aabbab
 	S =rm=> aSbS => aSbaSbS => aSbaSb => aSbab => aaSbSbab => aaSbbab => aabbab
 	略
 	二义
 	数量相同的a和b组成的串
 	
-7. 		
+7.
 	非二义，该文法生成布尔表达式
