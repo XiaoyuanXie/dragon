@@ -39,7 +39,7 @@
 	bfactor -> not bfactor | (bexpr) | true | false<br />
 
 回答：	
-1.<br />:
+1.:<br />:
 	S =lm=> 0S1 => 00S11 => 000111<br />
 	&nbsp;   S =rm=> 0S1 => 00S11 => 000111<br />
 	&nbsp;   略<br />
