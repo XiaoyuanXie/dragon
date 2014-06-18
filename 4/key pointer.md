@@ -47,11 +47,11 @@
 	前导n个连续0，后跟n个连续1的串<br />
 	
 2.	b<br />
-	&nbsp;   S =lm=> +SS => +*SSS => +*aSS => +*aaS => +*aaa<br />
-	&nbsp;   S =rm=> +SS => +Sa => +*SSa => +*Saa => +*aaa<br />
-	&nbsp;   略<br />
-	&nbsp;   非二义<br />
-	&nbsp;   加法、乘法的前缀表达式<br />
+	S =lm=> +SS => +*SSS => +*aSS => +*aaS => +*aaa<br />
+	S =rm=> +SS => +Sa => +*SSa => +*Saa => +*aaa<br />
+	略<br />
+	非二义<br />
+	加法、乘法的前缀表达式<br />
 	
 3.<br />
 	&nbsp;   S =lm=> S(S)S => (S)S => (S(S)S)S => ((S)S)S => (()S)S => (()S(S)S)S => (()(S)S)S => (()()S)S => (()())S => (()())<br />
