@@ -45,7 +45,7 @@
 	略<br />
 	非二义<br />
 	前导n个连续0，后跟n个连续1的串<br />
-	
+
 2.	b<br />
 	S =lm=> +SS => +*SSS => +*aSS => +*aaS => +*aaa<br />
 	S =rm=> +SS => +Sa => +*SSa => +*Saa => +*aaa<br />
