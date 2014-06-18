@@ -39,14 +39,14 @@
 	bfactor -> not bfactor | (bexpr) | true | false<br />
 
 回答：	
-1.	aa<br />
+1.	a<br />
 	S =lm=> 0S1 => 00S11 => 000111<br />
 	S =rm=> 0S1 => 00S11 => 000111<br />
 	略<br />
 	非二义<br />
 	前导n个连续0，后跟n个连续1的串<br />
 	
-2.<br />
+2.	b<br />
 	&nbsp;   S =lm=> +SS => +*SSS => +*aSS => +*aaS => +*aaa<br />
 	&nbsp;   S =rm=> +SS => +Sa => +*SSa => +*Saa => +*aaa<br />
 	&nbsp;   略<br />
