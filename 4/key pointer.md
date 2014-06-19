@@ -39,47 +39,47 @@
 	bfactor -> not bfactor | (bexpr) | true | false<br />
 
 ####回答：####
-1.	下面的布尔表达式对应的文法：<br />
-     S =lm=> 0S1 => 00S11 => 000111<br />
-     S =rm=> 0S1 => 00S11 => 000111<br />
+1.	<br />
+    S =lm=> 0S1 => 00S11 => 000111<br />
+    S =rm=> 0S1 => 00S11 => 000111<br />
 	略<br />
 	非二义<br />
 	前导n个连续0，后跟n个连续1的串
 
-2.	b<br />
+2.	<br />
 	S =lm=> +SS => +*SSS => +*aSS => +*aaS => +*aaa<br />
 	S =rm=> +SS => +Sa => +*SSa => +*Saa => +*aaa<br />
 	略<br />
 	非二义<br />
 	加法、乘法的前缀表达式
 
-3.<br />
+3.	<br />
 	S =lm=> S(S)S => (S)S => (S(S)S)S => ((S)S)S => (()S)S => (()S(S)S)S => (()(S)S)S => (()()S)S => (()())S => (()())<br />
 	S =rm=> S(S)S => S(S) => S(S(S)S) => S(S(S)) => S(S()) => S(S(S)S()) => S(S(S)()) => S(S()()) => S(()()) => (()())<br />
 	略<br />
 	二义<br />
 	所有对称的括号串<br />
 
-4.<br />
+4.	<br />
 	S =lm=> SS => S*S => (S)*S => (S+S)*S => (a+S)*S => (a+a)*S => (a+a)*a<br />
 	S =rm=> SS => Sa => S*a => (S)*a => (S+S)*a => (S+a)*a => (a+a)*a<br />
 	略<br />
 	二义<br />
 	由加号、乘号和字符a和对称的括号组成的串，且加号不在开头和结尾位置，乘号不在开头位置<br />
 
-5.<br />
+5.	<br />
 	S =lm=> (L) => (L, S) => (L, S, S) => ((S), S, S) => ((L), S, S) => ((L, S), S, S) => ((S, S), S, S) => ((a, S), S, S) => ((a, a), S, S) => ((a, a), a, S) => ((a, a), a, (L)) => ((a, a), a, (S)) => ((a, a), a, (a))<br />
 	S =rm=> (L) => (L, S) => (L, (L)) => (L, (a)) => (L, S, (a)) => (L, a, (a)) => (S, a, (a)) => ((L), a, (a)) => ((L, S), a, (a)) => ((S, S), a, (a)) => ((S, a), a, (a)) => ((a, a), a, (a))<br />
 	略<br />
 	非二义<br />
 	类似于python中的元组<br />
 		
-6.<br />
+6.	<br />
 	S =lm=> aSbS => aaSbSbS => aabSbS => aabbS => aabbaSbS => aabbabS => aabbab<br />
 	S =rm=> aSbS => aSbaSbS => aSbaSb => aSbab => aaSbSbab => aaSbbab => aabbab<br />
 	略<br />
 	二义<br />
 	数量相同的a和b组成的串<br />
 
-7.<br />
+7.	<br />
 	非二义，该文法生成布尔表达式<br />
