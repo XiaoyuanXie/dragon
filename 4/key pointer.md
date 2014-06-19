@@ -22,7 +22,7 @@
 	因为*和+两个终结符号会决定采用前两天句型的顺序，所以无二义性
 5.	描述这个语法生成的语言:<br />
 	乘法加法的后缀表达式
-	
+
 ###4.2.2
 
 对下列的每一对文法和串重复练习 4.2.1 。
@@ -52,34 +52,34 @@
 	略<br />
 	非二义<br />
 	加法、乘法的前缀表达式
-	
+
 3.<br />
-	&nbsp;   S =lm=> S(S)S => (S)S => (S(S)S)S => ((S)S)S => (()S)S => (()S(S)S)S => (()(S)S)S => (()()S)S => (()())S => (()())<br />
-	&nbsp;   S =rm=> S(S)S => S(S) => S(S(S)S) => S(S(S)) => S(S()) => S(S(S)S()) => S(S(S)()) => S(S()()) => S(()()) => (()())<br />
-	&nbsp;   略<br />
-	&nbsp;   二义<br />
-	&nbsp;   所有对称的括号串<br />
-	
+	S =lm=> S(S)S => (S)S => (S(S)S)S => ((S)S)S => (()S)S => (()S(S)S)S => (()(S)S)S => (()()S)S => (()())S => (()())<br />
+	S =rm=> S(S)S => S(S) => S(S(S)S) => S(S(S)) => S(S()) => S(S(S)S()) => S(S(S)()) => S(S()()) => S(()()) => (()())<br />
+	略<br />
+	二义<br />
+	所有对称的括号串<br />
+
 4.<br />
-	&nbsp;   S =lm=> SS => S*S => (S)*S => (S+S)*S => (a+S)*S => (a+a)*S => (a+a)*a<br />
-	&nbsp;   S =rm=> SS => Sa => S*a => (S)*a => (S+S)*a => (S+a)*a => (a+a)*a<br />
-	&nbsp;   略<br />
-	&nbsp;   二义<br />
-	&nbsp;   由加号、乘号和字符a和对称的括号组成的串，且加号不在开头和结尾位置，乘号不在开头位置<br />
-	
+	S =lm=> SS => S*S => (S)*S => (S+S)*S => (a+S)*S => (a+a)*S => (a+a)*a<br />
+	S =rm=> SS => Sa => S*a => (S)*a => (S+S)*a => (S+a)*a => (a+a)*a<br />
+	略<br />
+	二义<br />
+	由加号、乘号和字符a和对称的括号组成的串，且加号不在开头和结尾位置，乘号不在开头位置<br />
+
 5.<br />
-	&nbsp;   S =lm=> (L) => (L, S) => (L, S, S) => ((S), S, S) => ((L), S, S) => ((L, S), S, S) => ((S, S), S, S) => ((a, S), S, S) => ((a, a), S, S) => ((a, a), a, S) => ((a, a), a, (L)) => ((a, a), a, (S)) => ((a, a), a, (a))<br />
-	&nbsp;   S =rm=> (L) => (L, S) => (L, (L)) => (L, (a)) => (L, S, (a)) => (L, a, (a)) => (S, a, (a)) => ((L), a, (a)) => ((L, S), a, (a)) => ((S, S), a, (a)) => ((S, a), a, (a)) => ((a, a), a, (a))<br />
-	&nbsp;   略<br />
-	&nbsp;   非二义<br />
-	&nbsp;   类似于python中的元组<br />
+	S =lm=> (L) => (L, S) => (L, S, S) => ((S), S, S) => ((L), S, S) => ((L, S), S, S) => ((S, S), S, S) => ((a, S), S, S) => ((a, a), S, S) => ((a, a), a, S) => ((a, a), a, (L)) => ((a, a), a, (S)) => ((a, a), a, (a))<br />
+	S =rm=> (L) => (L, S) => (L, (L)) => (L, (a)) => (L, S, (a)) => (L, a, (a)) => (S, a, (a)) => ((L), a, (a)) => ((L, S), a, (a)) => ((S, S), a, (a)) => ((S, a), a, (a)) => ((a, a), a, (a))<br />
+	略<br />
+	非二义<br />
+	类似于python中的元组<br />
 		
 6.<br />
-	&nbsp;   S =lm=> aSbS => aaSbSbS => aabSbS => aabbS => aabbaSbS => aabbabS => aabbab<br />
-	&nbsp;   S =rm=> aSbS => aSbaSbS => aSbaSb => aSbab => aaSbSbab => aaSbbab => aabbab<br />
-	&nbsp;   略<br />
-	&nbsp;   二义<br />
-	&nbsp;   数量相同的a和b组成的串<br />
-	
+	S =lm=> aSbS => aaSbSbS => aabSbS => aabbS => aabbaSbS => aabbabS => aabbab<br />
+	S =rm=> aSbS => aSbaSbS => aSbaSb => aSbab => aaSbSbab => aaSbbab => aabbab<br />
+	略<br />
+	二义<br />
+	数量相同的a和b组成的串<br />
+
 7.<br />
-	&nbsp;   非二义，该文法生成布尔表达式<br />
+	非二义，该文法生成布尔表达式<br />
