@@ -39,7 +39,7 @@
 	bfactor -> not bfactor | (bexpr) | true | false<br />
 
 回答：	
-1.	a<br />
+1.	下面的布尔表达式对应的文法：<br />
 	S =lm=> 0S1 => 00S11 => 000111<br />
 	S =rm=> 0S1 => 00S11 => 000111<br />
 	略<br />
