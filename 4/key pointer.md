@@ -17,3 +17,14 @@
 		}
 		消除Aj的立即左递归
 	}
+
+#A -> &alpha;B 或者 A -> &alpha;B&beta;并且&epsilon; &isin; &beta;#
+则follow(A) &isin; follow(B)
+因为如果要应用B的推倒式，那么肯定得和开始字符匹配
+
+例如A -> aA'
+	A' -> b | c
+
+abaab
+
+对于第三个a要匹配A'肯定要符合下来是b|c才会应用这个文法
